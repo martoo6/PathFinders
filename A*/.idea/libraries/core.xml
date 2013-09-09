@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="core">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/processing-2.0/core/library/core.jar!/" />
+      <root url="jar://$USER_HOME$/processing-2.0/core/library/gluegen-rt.jar!/" />
+      <root url="jar://$USER_HOME$/processing-2.0/core/library/jogl-all.jar!/" />
+      <root url="jar://$USER_HOME$/sketchbook/libraries/controlP5/library/controlP5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

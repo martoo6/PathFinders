@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="unnamed">
+    <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyStoreUrl" value="file://" />
+        <option name="proGuardCfgFileUrl" value="file://" />
+      </options>
+    </properties>
+    <root id="archive" name="unnamed.apk">
+      <element id="library" level="project" name="core" />
+      <element id="library" level="application" name="scala-library" />
+      <element id="library" level="application" name="scala-compiler" />
+    </root>
+  </artifact>
+</component>

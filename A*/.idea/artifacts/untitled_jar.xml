@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="untitled:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/untitled_jar</output-path>
+    <root id="archive" name="untitled.jar">
+      <element id="module-output" name="A*" />
+      <element id="extracted-dir" path="$USER_HOME$/processing-2.0/core/library/core.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/processing-2.0/core/library/gluegen-rt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/processing-2.0/core/library/jogl-all.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/sketchbook/libraries/controlP5/library/controlP5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.1/lib/scala-library.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.1/lib/scala-swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.1/lib/scala-actors.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/scala-compiler.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/akka-actors.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/diffutils.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/jline.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/scala-actors-migration.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/scala-actors.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/scala-library.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/scala-partest.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/scala-reflect.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/scala-swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/scalap.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/scala-2.10.2/lib/typesafe-config.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
