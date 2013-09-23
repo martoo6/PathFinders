@@ -30,9 +30,7 @@ class Nodo(var x: Int, var y: Int) {
 	}
 	var walkable = true
 	def isValid = x >= 0 && y >= 0 && x < Maze.w && y < Maze.h && walkable
-	def isValidNode(node :Nodo):Boolean = {
-		return (node.x >= 0 && node.y >= 0 && node.x <= Maze.w - 1 && node.y <= Maze.h - 1 && node.walkable)
-	}
+	def isValidNode(node :Nodo):Boolean = node.x >= 0 && node.y >= 0 && node.x <= Maze.w - 1 && node.y <= Maze.h - 1 && node.walkable
 	def isTheSame(nodo: Nodo) = nodo.x == x && nodo.y == y
 	def getNeightbours = neightbours
 	def setNeightbours = {

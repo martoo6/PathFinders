@@ -20,7 +20,7 @@ object Maze {
 	}
 	def calcMaze {
 		for (i <- 0 to w - 1) for (e <- 0 to h - 1) maze(i)(e) = new Nodo(i, e)
-		for (i <- 0 to w - 1) for (e <- 0 to h - 1) maze(i)(e) setNeightbours
+		for (i <- 0 to w - 1) for (e <- 0 to h - 1) maze(i)(e).setNeightbours
 	}
 	def get(x: Int, y: Int): Nodo = {
 		if (x >= 0 && y >= 0 && x < w && y < h) maze(x)(y) else new Nodo(x, y)

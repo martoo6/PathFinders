@@ -4,8 +4,7 @@
     <facet type="scala" name="Scala">
       <configuration>
         <option name="compilerLibraryLevel" value="Project" />
-        <option name="compilerLibraryName" value="scala-library" />
-        <option name="languageLevel" value="Scala 2.11" />
+        <option name="compilerLibraryName" value="scala-lib" />
       </configuration>
     </facet>
   </component>
@@ -16,26 +15,9 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
-    <orderEntry type="library" exported="" name="core" level="project" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/scala-2.10.2/lib/scala-compiler.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/scala-2.10.2/lib/scala-library.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="library" exported="" name="scala-library" level="project" />
+    <orderEntry type="library" exported="" name="processing-libs" level="project" />
+    <orderEntry type="library" exported="" name="scala-lib" level="project" />
+    <orderEntry type="library" exported="" name="controlP5" level="project" />
   </component>
 </module>
 

@@ -6,10 +6,7 @@ import scala.collection.mutable
 import scala.Predef._
 import controlP5._
 import pathobjects._
-import java.util.concurrent.Semaphore
 import scala.util.Random
-import quickPos._
-import javax.swing.JOptionPane
 
 class PathFinder extends PApplet{
 
@@ -63,9 +60,9 @@ class PathFinder extends PApplet{
 			def controlEvent(p1: ControlEvent) = Clear
 		}
 
-		initQuickPos(screenW - controlSize + 20, 20)
+		quickPos.initQuickPos(screenW - controlSize + 20, 20)
 
-		nextQuickItem(
+    quickPos.nextQuickItem(
 			cp5.addButton("NewMaze")
 				.setValue(0)
 				.setCaptionLabel("Nuevo")
@@ -73,13 +70,13 @@ class PathFinder extends PApplet{
 				.setSize(100,40)
 		)
 
-		linebreakQuickItem(
+    quickPos.linebreakQuickItem(
 			cp5.addButton("Solve")
 				.setCaptionLabel("Resolver")
 				.setSize(100,40)
 		)
 
-		linebreakQuickItem(0, 80,
+    quickPos.linebreakQuickItem(0, 80,
 			cp5.addRadioButton("currentSelection")
 				.addItem("Origen", 0)
 				.addItem("Destino", 1)
@@ -91,7 +88,7 @@ class PathFinder extends PApplet{
 				.activate(0)
 		)
 
-		linebreakQuickItem(
+    quickPos.linebreakQuickItem(
 			cp5.addButton("RandomValues")
 				.setCaptionLabel("Generar al azar")
 				.setSize(100, 40)
@@ -113,7 +110,7 @@ class PathFinder extends PApplet{
 		)
 
 
-		linebreakQuickItem(
+    quickPos.linebreakQuickItem(
 			cp5.addSlider("HeuristicMultiplier")
 				.setMax(20)
 				.setSize(150, 40)
@@ -123,7 +120,7 @@ class PathFinder extends PApplet{
 
 		)
 
-		nextQuickItem(
+    quickPos.nextQuickItem(
 			cp5.addToggle("ShowSteps")
 				.setColorForeground(color(120))
 				.setColorActive(color(255))
@@ -131,7 +128,7 @@ class PathFinder extends PApplet{
 				.setSize(70,40)
 		)
 
-		nextQuickItem(
+    quickPos.nextQuickItem(
 			cp5.addToggle("ShowValues")
 				.setColorForeground(color(120))
 				.setColorActive(color(255))
@@ -139,7 +136,7 @@ class PathFinder extends PApplet{
 				.setSize(70,40)
 		)
 
-		linebreakQuickItem(0,10,
+    quickPos.linebreakQuickItem(0,10,
 			cp5.addToggle("ShowGrid")
 				.setColorForeground(color(120))
 				.setColorActive(color(255))
@@ -147,7 +144,7 @@ class PathFinder extends PApplet{
 				.setSize(70,40)
 		)
 
-		linebreakQuickItem(0, 30,
+    quickPos.linebreakQuickItem(0, 30,
 			cp5.addSlider("sleepTime")
 				.setMax(3000)
 				.setSize(150, 30)
@@ -177,9 +174,9 @@ class PathFinder extends PApplet{
 			}
 		})
 
-		linebreakQuickItem(0, 50, l)
+    quickPos.linebreakQuickItem(0, 50, l)
 
-		nextQuickItem(
+    quickPos.nextQuickItem(
 			cp5.addSlider2D("MazeSize")
 				.setSize(170, 170)
 				.setArrayValue(Array(0f, 0f))
@@ -318,7 +315,7 @@ class PathFinder extends PApplet{
 
 	def ShowSteps(theValue :Int) {showSteps= !showSteps;}
 
-	def ShowGrid(theValue :Int) { showGrid= !showGrid ; println("in")}
+	def ShowGrid(theValue :Int) { showGrid= !showGrid;}
 
 	def Solve {
 		if(orig.x != -1 && dest.x != -1){
@@ -336,8 +333,8 @@ class PathFinder extends PApplet{
 
 	def Clear{
 		Maze setSize(cp5.getController("MazeSize").getArrayValue(0) toInt, cp5.getController("MazeSize").getArrayValue(1) toInt)
-		stepX=((screenW-controlSize)/Maze.w.toFloat)
-		stepY=(screenH/Maze.h.toFloat)
+		stepX=(screenW-controlSize)/Maze.w.toFloat
+		stepY=screenH/Maze.h.toFloat
 		notWalkable.clear()
 		clearLists
 		orig= new Nodo(-1,-1)

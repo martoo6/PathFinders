@@ -1,6 +1,6 @@
 package pathobjects
 
-import controlP5.{Button, ControllerInterface, Controller}
+import controlP5.ControllerInterface
 import processing.core.PVector
 
 /**
